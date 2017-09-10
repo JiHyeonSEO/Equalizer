@@ -1,0 +1,12 @@
+{
+		
+	"earphone": [
+		{ 
+			"model": "aaa", 
+			"freq1_mean" : "100",
+			"freq2_mean" : "200",
+			"freq3_mean" : "300",
+			"freq4_mean" : "400" 
+		}
+	]
+}

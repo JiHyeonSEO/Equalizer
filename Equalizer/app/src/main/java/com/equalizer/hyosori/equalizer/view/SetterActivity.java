@@ -12,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -19,12 +20,15 @@ import com.equalizer.hyosori.equalizer.R;
 import com.equalizer.hyosori.equalizer.model.DeviceInfo;
 import com.equalizer.hyosori.equalizer.presenter.SetterPresenter;
 
+import org.w3c.dom.Text;
+
 
 public class SetterActivity extends AppCompatActivity implements SetterView {
 
     private Toolbar toolbar;
     private ConstraintLayout detailSettingLayout;
 
+    private TextView model;
     private Spinner baseSpinner;
     private Spinner targetSpinner;
 
@@ -42,8 +46,11 @@ public class SetterActivity extends AppCompatActivity implements SetterView {
 
         detailSettingLayout = (ConstraintLayout) findViewById(R.id.detailSettingLayout);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        model = (TextView)findViewById(R.id.model);
         baseSpinner = (Spinner) findViewById(R.id.spinner1);
         targetSpinner = (Spinner) findViewById(R.id.spinner2);
+
 
         seekBar60 = (SeekBar) findViewById(R.id.seekBar1);
         seekBar230 = (SeekBar) findViewById(R.id.seekBar2);
@@ -52,16 +59,23 @@ public class SetterActivity extends AppCompatActivity implements SetterView {
 
         setSupportActionBar(toolbar);
 
-        ArrayAdapter<DeviceInfo> adapter = new ArrayAdapter<DeviceInfo>(this, R.layout.support_simple_spinner_dropdown_item, presenter.ReadData());
+        final ArrayAdapter<DeviceInfo> adapter = new ArrayAdapter<DeviceInfo>(this, R.layout.support_simple_spinner_dropdown_item, presenter.ReadData());
         baseSpinner.setAdapter(adapter);
 
         baseSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                /*
                 final int childCount = detailSettingLayout.getChildCount();
                 for (int i = 0; i < childCount; ++i) {
                     View v = detailSettingLayout.getChildAt(i);
                     v.setEnabled(false);
+                }
+                */
+                DeviceInfo info;
+                if(!(baseSpinner.getSelectedItem() == null)){
+                    info = (DeviceInfo)baseSpinner.getSelectedItem();
+                    model.setText(String.format(info.getModel()));
                 }
             }
 

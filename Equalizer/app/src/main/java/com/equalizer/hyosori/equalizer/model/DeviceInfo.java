@@ -28,4 +28,9 @@ public class DeviceInfo {
         this.freq3_mean = freq3;
         this.freq4_mean = freq4;
     }
+
+    @Override
+    public String toString(){
+        return model;
+    }
 }

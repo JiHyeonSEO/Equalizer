@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740af7e1-3af9-49d1-b556-73ca9dc1bb69" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Eq/.idea/modules.xml" afterPath="$PROJECT_DIR$/Eq/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Equalizer/.idea/modules.xml" afterPath="$PROJECT_DIR$/Equalizer/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/model/DeviceInfo.java" afterPath="$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/model/DeviceInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/model/Recorder.java" afterPath="$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/model/Recorder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/presenter/SetterPresenter.java" afterPath="$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/presenter/SetterPresenter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/view/SetterActivity.java" afterPath="$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/view/SetterActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Equalizer/app/src/main/res/layout/setter.xml" afterPath="$PROJECT_DIR$/Equalizer/app/src/main/res/layout/setter.xml" />
     </list>
     <ignored path="Equalizer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,15 +63,18 @@
         <entry file="file://$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/view/SetterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-3243">
-              <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+              <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4040#4041#0" expanded="false" />
-                <element signature="e#4105#4106#0" expanded="false" />
-                <element signature="e#4495#4496#0" expanded="false" />
-                <element signature="e#4560#4561#0" expanded="false" />
-                <element signature="e#4951#4952#0" expanded="false" />
-                <element signature="e#5016#5017#0" expanded="false" />
+                <element signature="e#4019#4020#0" expanded="false" />
+                <element signature="e#4084#4085#0" expanded="false" />
+                <element signature="e#4474#4475#0" expanded="false" />
+                <element signature="e#4539#4540#0" expanded="false" />
+                <element signature="e#4929#4930#0" expanded="false" />
+                <element signature="e#4994#4995#0" expanded="false" />
+                <element signature="e#5385#5386#0" expanded="false" />
+                <element signature="e#5450#5451#0" expanded="false" />
+                <marker date="1505049052397" expanded="true" signature="54:688" ph="..." />
+                <marker date="1505049052397" expanded="true" signature="1231:5469" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -84,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/Equalizer/app/src/main/res/layout/setter.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-250">
-              <caret line="77" column="43" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+              <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -1021,7 +1021,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1154,15 +1154,18 @@
     <entry file="file://$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/view/SetterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3243">
-          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4040#4041#0" expanded="false" />
-            <element signature="e#4105#4106#0" expanded="false" />
-            <element signature="e#4495#4496#0" expanded="false" />
-            <element signature="e#4560#4561#0" expanded="false" />
-            <element signature="e#4951#4952#0" expanded="false" />
-            <element signature="e#5016#5017#0" expanded="false" />
+            <element signature="e#4019#4020#0" expanded="false" />
+            <element signature="e#4084#4085#0" expanded="false" />
+            <element signature="e#4474#4475#0" expanded="false" />
+            <element signature="e#4539#4540#0" expanded="false" />
+            <element signature="e#4929#4930#0" expanded="false" />
+            <element signature="e#4994#4995#0" expanded="false" />
+            <element signature="e#5385#5386#0" expanded="false" />
+            <element signature="e#5450#5451#0" expanded="false" />
+            <marker date="1505049052397" expanded="true" signature="54:688" ph="..." />
+            <marker date="1505049052397" expanded="true" signature="1231:5469" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1170,7 +1173,7 @@
     <entry file="file://$PROJECT_DIR$/Equalizer/app/src/main/res/layout/setter.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-250">
-          <caret line="77" column="43" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+          <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
           <folding />
         </state>
       </provider>
