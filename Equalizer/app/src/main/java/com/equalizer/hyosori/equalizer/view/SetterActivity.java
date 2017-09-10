@@ -28,7 +28,8 @@ public class SetterActivity extends AppCompatActivity implements SetterView {
     private Toolbar toolbar;
     private ConstraintLayout detailSettingLayout;
 
-    private TextView model;
+    private TextView base_model;
+    private TextView target_model;
     private Spinner baseSpinner;
     private Spinner targetSpinner;
 
@@ -47,7 +48,8 @@ public class SetterActivity extends AppCompatActivity implements SetterView {
         detailSettingLayout = (ConstraintLayout) findViewById(R.id.detailSettingLayout);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        model = (TextView)findViewById(R.id.model);
+        base_model = (TextView)findViewById(R.id.BASE_Model);
+        target_model = (TextView)findViewById(R.id.TARGET_model);
         baseSpinner = (Spinner) findViewById(R.id.spinner1);
         targetSpinner = (Spinner) findViewById(R.id.spinner2);
 
@@ -75,7 +77,7 @@ public class SetterActivity extends AppCompatActivity implements SetterView {
                 DeviceInfo info;
                 if(!(baseSpinner.getSelectedItem() == null)){
                     info = (DeviceInfo)baseSpinner.getSelectedItem();
-                    model.setText(String.format(info.getModel()));
+                    base_model.setText(String.format(info.getModel()));
                 }
             }
 
@@ -87,10 +89,17 @@ public class SetterActivity extends AppCompatActivity implements SetterView {
         targetSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                /*
                 final int childCount = detailSettingLayout.getChildCount();
                 for (int i = 0; i < childCount; ++i) {
                     View v = detailSettingLayout.getChildAt(i);
                     v.setEnabled(false);
+                }
+                */
+                DeviceInfo info;
+                if(!(baseSpinner.getSelectedItem() == null)){
+                    info = (DeviceInfo)baseSpinner.getSelectedItem();
+                    target_model.setText(String.format(info.getModel()));
                 }
             }
 

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740af7e1-3af9-49d1-b556-73ca9dc1bb69" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Equalizer/earphone.json.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Eq/.idea/modules.xml" afterPath="$PROJECT_DIR$/Eq/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/model/DeviceInfo.java" afterPath="$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/model/DeviceInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/view/SetterActivity.java" afterPath="$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/view/SetterActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Equalizer/app/src/main/res/layout/setter.xml" afterPath="$PROJECT_DIR$/Equalizer/app/src/main/res/layout/setter.xml" />
     </list>
@@ -63,18 +63,18 @@
         <entry file="file://$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/view/SetterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-3243">
-              <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+              <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
               <folding>
-                <element signature="e#4019#4020#0" expanded="false" />
-                <element signature="e#4084#4085#0" expanded="false" />
-                <element signature="e#4474#4475#0" expanded="false" />
-                <element signature="e#4539#4540#0" expanded="false" />
-                <element signature="e#4929#4930#0" expanded="false" />
-                <element signature="e#4994#4995#0" expanded="false" />
-                <element signature="e#5385#5386#0" expanded="false" />
-                <element signature="e#5450#5451#0" expanded="false" />
-                <marker date="1505049052397" expanded="true" signature="54:688" ph="..." />
-                <marker date="1505049052397" expanded="true" signature="1231:5469" ph="{...}" />
+                <element signature="e#4435#4436#0" expanded="false" />
+                <element signature="e#4500#4501#0" expanded="false" />
+                <element signature="e#4890#4891#0" expanded="false" />
+                <element signature="e#4955#4956#0" expanded="false" />
+                <element signature="e#5345#5346#0" expanded="false" />
+                <element signature="e#5410#5411#0" expanded="false" />
+                <element signature="e#5801#5802#0" expanded="false" />
+                <element signature="e#5866#5867#0" expanded="false" />
+                <marker date="1505049474985" expanded="true" signature="54:688" ph="..." />
+                <marker date="1505049474985" expanded="true" signature="1271:5885" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -1021,7 +1021,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1154,18 +1154,18 @@
     <entry file="file://$PROJECT_DIR$/Equalizer/app/src/main/java/com/equalizer/hyosori/equalizer/view/SetterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3243">
-          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
           <folding>
-            <element signature="e#4019#4020#0" expanded="false" />
-            <element signature="e#4084#4085#0" expanded="false" />
-            <element signature="e#4474#4475#0" expanded="false" />
-            <element signature="e#4539#4540#0" expanded="false" />
-            <element signature="e#4929#4930#0" expanded="false" />
-            <element signature="e#4994#4995#0" expanded="false" />
-            <element signature="e#5385#5386#0" expanded="false" />
-            <element signature="e#5450#5451#0" expanded="false" />
-            <marker date="1505049052397" expanded="true" signature="54:688" ph="..." />
-            <marker date="1505049052397" expanded="true" signature="1231:5469" ph="{...}" />
+            <element signature="e#4435#4436#0" expanded="false" />
+            <element signature="e#4500#4501#0" expanded="false" />
+            <element signature="e#4890#4891#0" expanded="false" />
+            <element signature="e#4955#4956#0" expanded="false" />
+            <element signature="e#5345#5346#0" expanded="false" />
+            <element signature="e#5410#5411#0" expanded="false" />
+            <element signature="e#5801#5802#0" expanded="false" />
+            <element signature="e#5866#5867#0" expanded="false" />
+            <marker date="1505049474985" expanded="true" signature="54:688" ph="..." />
+            <marker date="1505049474985" expanded="true" signature="1271:5885" ph="{...}" />
           </folding>
         </state>
       </provider>
