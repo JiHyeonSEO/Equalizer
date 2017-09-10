@@ -1,9 +1,22 @@
 package com.equalizer.hyosori.equalizer.presenter;
 
 
+import android.util.Log;
+
 import com.equalizer.hyosori.equalizer.model.BandSet;
+import com.equalizer.hyosori.equalizer.model.DeviceInfo;
 import com.equalizer.hyosori.equalizer.model.Eq;
 import com.equalizer.hyosori.equalizer.view.SetterView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class SetterPresenter implements Presenter {
 
@@ -12,10 +25,10 @@ public class SetterPresenter implements Presenter {
     private BandSet base;
     private BandSet target;
 
-    public ArrayList<>ReadData()
+    public ArrayList<DeviceInfo> ReadData()
     {
         File file = new File("sdcard/data.json");
-        ArrayList<deviceInfo> earphoenInfoList = new ArrayList<deviceInfo>();;
+        ArrayList<DeviceInfo> earphoenInfoList = new ArrayList<DeviceInfo>();;
         if(file.exists()) {
             StringBuilder text = new StringBuilder();
 
@@ -40,13 +53,14 @@ public class SetterPresenter implements Presenter {
 
                 for(int i = 0; i < freqArr.length(); i++){
                     JSONObject earphoneInfo = freqArr.getJSONObject(i);
-                    deviceInfo dvinfo = new deviceInfo();
+                    DeviceInfo dvinfo = new DeviceInfo(earphoneInfo.getString("model"), earphoneInfo.getInt("freq1_mean"), earphoneInfo.getInt("freq2_mean"),
+                            earphoneInfo.getInt("freq3_mean"), earphoneInfo.getInt("freq4_mean"));
 
-                    dvinfo.model  = earphoneInfo.getString("model");
-                    dvinfo.freq1_mean = earphoneInfo.getInt("freq1_mean");
-                    dvinfo.freq2_mean = earphoneInfo.getInt("freq2_mean");
-                    dvinfo.freq3_mean = earphoneInfo.getInt("freq3_mean");
-                    dvinfo.freq4_mean = earphoneInfo.getInt("freq4_mean");
+                    //dvinfo.model  = earphoneInfo.getString("model");
+                    //dvinfo.freq1_mean = earphoneInfo.getInt("freq1_mean");
+                    //dvinfo.freq2_mean = earphoneInfo.getInt("freq2_mean");
+                    //dvinfo.freq3_mean = earphoneInfo.getInt("freq3_mean");
+                    //dvinfo.freq4_mean = earphoneInfo.getInt("freq4_mean");
 
                     //ArrayList<deviceInfo> deviceInfoList = new ArrayList<deviceInfo>();
                     //earphoenInfoList = new ArrayList<JSONObject>();
@@ -57,16 +71,22 @@ public class SetterPresenter implements Presenter {
                 {
                     Log.i("earphone1 : ", earphoenInfoList.get(i).toString());
                 }
+
+            return earphoenInfoList;
             }catch (JSONException je){
                 Log.e("jsonErr", "json 에러", je);
+                je.printStackTrace();
+                return null;
             }
             catch (IOException e) {
                 e.printStackTrace();
+                return null;
             }
         }
         else
         {
             Log.i("error : ", "파일 없음");
+            return null;
         }
     }
 
@@ -78,7 +98,7 @@ public class SetterPresenter implements Presenter {
     @Override
     public void onCreate() {
         model = new Eq();
-        ReadData rd = new ReadData();
+        ReadData();
     }
 
     @Override

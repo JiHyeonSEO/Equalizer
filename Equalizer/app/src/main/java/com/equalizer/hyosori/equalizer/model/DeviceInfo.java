@@ -1,4 +1,4 @@
-
+package com.equalizer.hyosori.equalizer.model;
 /**
  * Created by samsung on 2017-09-09.
  */
@@ -13,6 +13,11 @@ public class DeviceInfo {
     public  DeviceInfo()
     {
 
+    }
+
+    public String getModel()
+    {
+        return model;
     }
 
     public DeviceInfo(String model, int freq1, int freq2, int freq3, int freq4)

@@ -11,8 +11,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.SeekBar;
 import android.widget.Spinner;
+import android.widget.ArrayAdapter;
+
+import java.util.ArrayList;
 
 import com.equalizer.hyosori.equalizer.R;
+import com.equalizer.hyosori.equalizer.model.DeviceInfo;
 import com.equalizer.hyosori.equalizer.presenter.SetterPresenter;
 
 
@@ -48,6 +52,9 @@ public class SetterActivity extends AppCompatActivity implements SetterView {
 
         setSupportActionBar(toolbar);
 
+        ArrayAdapter<DeviceInfo> adapter = new ArrayAdapter<DeviceInfo>(this, R.layout.support_simple_spinner_dropdown_item, presenter.ReadData());
+        baseSpinner.setAdapter(adapter);
+
         baseSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -61,6 +68,7 @@ public class SetterActivity extends AppCompatActivity implements SetterView {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {}
         });
+        targetSpinner.setAdapter(adapter);
 
         targetSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
